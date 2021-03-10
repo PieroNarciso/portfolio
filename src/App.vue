@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
 import TheNavbar from './components/layout/TheNavbar.vue';
 
@@ -15,5 +15,5 @@ export default defineComponent({
     TheNavbar,
   },
   name: 'App',
-})
+});
 </script>

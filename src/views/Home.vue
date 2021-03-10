@@ -2,6 +2,7 @@
   <div>
     <TheHero />
     <TheSkillSection />
+    <TheContactMe class="pb-8"/>
 
     <div
       class="fixed flex items-center justify-center w-full text-gray-200 bottom-1 animate-bounce"
@@ -30,11 +31,13 @@ import { defineComponent } from 'vue'
 
 import TheHero from '../components/layout/TheHero.vue';
 import TheSkillSection from '../components/layout/TheSkillSection.vue';
+import TheContactMe from '../components/layout/TheContactMe.vue';
 
 export default defineComponent({
   components: {
     TheHero,
     TheSkillSection,
+    TheContactMe,
   },
   setup() {
     

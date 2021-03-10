@@ -1,11 +1,11 @@
 <template>
-  <section class="p-4 bg-primary-light">
+  <section class="p-4 bg-primary-light bg-gradient-to-b from-primary-light to-primary">
     <div class="grid grid-cols-1">
-      <h1 class="mt-6 text-4xl font-semibold hover:translate-x-2 text-coolWhite transform duration-200 hover:scale-105">
+      <TitleSection>
         <span v-for="char in 'My Skills'.split('')" class="hover:text-secondary" :key="char">
           {{ char }}
         </span>
-      </h1>
+      </TitleSection>
       <div class="mt-8 grid grid-cols-2 gap-2">
         <SkillCard
           v-for="skillItem in skills"
@@ -20,11 +20,13 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 
+import TitleSection from '../ui/TitleSection.vue';
 import SkillCard from '../ui/SkillCard.vue';
 
 export default defineComponent({
   components: {
     SkillCard,
+    TitleSection,
   },
   setup() {
     const skills = ref([

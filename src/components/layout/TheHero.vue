@@ -28,7 +28,7 @@
       </transition-group>
 
       <p-btn
-        class="mt-5 font-semibold uppercase hover:bg-secondary-dark transition duration-700"
+        class="mt-5 font-semibold uppercase"
       >
         Contact Me
       </p-btn>

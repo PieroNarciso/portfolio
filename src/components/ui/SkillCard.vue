@@ -3,9 +3,9 @@
     class="relative flex items-center overflow-hidden rounded-lg shadow-md group ease-in-out bg-brown hover:shadow-xl hover:scale-105 transform duration-300 hover:bg-opacity-60"
   >
     <div
-      class="absolute flex items-center justify-center w-full h-full opacity-0 group-hover:opacity-70 bg-primary-dark"
+      class="absolute flex items-center justify-center w-full h-full opacity-0 group-hover:opacity-50 bg-secondary-light"
     >
-      <p class="text-2xl font-semibold uppercase text-coolWhite-light">
+      <p class="text-2xl font-bold tracking-wide uppercase opacity-100 text-primary-dark">
         {{ item.name }}
       </p>
     </div>
