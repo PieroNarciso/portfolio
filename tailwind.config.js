@@ -26,11 +26,14 @@ module.exports = {
           DEFAULT: '#A1A1AA',
           dark: '#71717A'
         }
-      }
+      },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      opacity: ['disabled'],
+      backgroundColor: ['disabled'],
+    },
   },
   plugins: [
     require('@tailwindcss/forms'),
