@@ -1,6 +1,6 @@
 <template>
   <button
-    class="p-1 rounded-full focus:bg-primary-dark transform duration-200 hover:scale-105"
+    class="p-1 rounded-full focus:bg-primary-dark transform duration-200 hover:scale-105 focus:outline-none"
   >
     <svg
       class="w-8 h-8 fill-current text-coolWhite-light"

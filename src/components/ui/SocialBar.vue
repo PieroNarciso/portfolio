@@ -31,7 +31,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 
-import PFabBtn from '../base/BFabBtn.vue';
+import PFabBtn from '../base/PFabBtn.vue';
 
 export default defineComponent({
   components: {
