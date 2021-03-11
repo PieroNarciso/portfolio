@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex items-center overflow-hidden rounded-lg shadow-md group ease-in-out bg-brown hover:shadow-xl hover:scale-105 transform duration-300 hover:bg-opacity-60"
+    class="relative flex items-center overflow-hidden rounded-lg shadow-md group ease-in-out bg-primary-light hover:shadow-xl hover:bg-opacity-60"
   >
     <div
       class="absolute flex items-center justify-center w-full h-full opacity-0 group-hover:opacity-50 bg-secondary-light"

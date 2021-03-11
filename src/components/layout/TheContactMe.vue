@@ -1,5 +1,5 @@
 <template>
-  <section class="px-4 pt-4" v-bind="$attrs">
+  <section class="px-4 pt-4 bg-primary" v-bind="$attrs">
     <TitleSection>
       Contact Me
     </TitleSection>
