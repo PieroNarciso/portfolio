@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center h-screen bg-gradient-to-b from-primary to-primary-light"
+    class="flex items-center h-screen bg-gradient-to-b from-primary-light to-primary"
   >
     <div class="px-2">
       <transition-group appear>

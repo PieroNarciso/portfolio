@@ -1,10 +1,8 @@
 <template>
-  <section class="p-4 bg-primary-light bg-gradient-to-b from-primary-light to-primary">
+  <section class="p-4 bg-primary-light bg-gradient-to-b from-primary to-primary-dark">
     <div class="grid grid-cols-1">
       <TitleSection>
-        <span v-for="char in 'My Skills'.split('')" class="hover:text-secondary" :key="char">
-          {{ char }}
-        </span>
+        My Skills
       </TitleSection>
       <div class="mt-8 grid grid-cols-2 gap-2">
         <SkillCard
