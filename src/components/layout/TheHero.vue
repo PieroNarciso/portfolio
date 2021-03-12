@@ -29,6 +29,7 @@
 
       <p-btn
         class="mt-5 font-semibold uppercase"
+        @click="$router.push({ name: 'Contact' })"
       >
         Contact Me
       </p-btn>
