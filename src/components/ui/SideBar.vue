@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed top-0 left-0 w-full h-full px-8 pt-4 pb-8 opacity-90 bg-brown-dark"
+    class="fixed top-0 left-0 z-20 w-full h-full px-8 pt-4 pb-8 opacity-90 bg-brown-dark"
   >
     <div class="flex flex-row-reverse mb-4">
       <button

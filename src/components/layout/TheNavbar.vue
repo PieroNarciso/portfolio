@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute flex items-center justify-between w-full px-3 py-2 bg-primary-light">
+  <div class="fixed z-10 flex items-center justify-between w-full px-3 py-2 shadow-xl bg-primary-light">
     <div>
       <BurgerMenu />
     </div>
