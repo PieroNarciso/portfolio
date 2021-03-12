@@ -1,7 +1,7 @@
 <template>
   <section class="h-auto p-4 bg-gradient-to-b from-primary-dark to-primary">
     <TitleSection>My Portfolio</TitleSection>
-    <div class="flex-col mt-8 space-y-5">
+    <div class="flex-col mt-12 space-y-10">
       <PortafolioCard v-for="item in items" :item="item" :key="item.name">
       </PortafolioCard>
     </div>
