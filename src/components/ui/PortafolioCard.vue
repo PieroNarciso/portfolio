@@ -2,7 +2,7 @@
   <div
     class="overflow-hidden bg-primary-light grid grid-cols-1 rounded-md hover:shadow-xl transform hover:scale-105 duration-300"
   >
-    <div class="h-48">
+    <div class="h-52">
       <img
         class="object-cover object-top w-full h-full cursor-pointer"
         v-if="item.path"
@@ -12,11 +12,11 @@
       />
     </div>
     <div class="flex-col p-4">
-      <h1 class="text-xl font-bold tracking-wide text-coolWhite-dark">
+      <h1 class="text-2xl font-bold tracking-wide text-coolWhite-dark">
         {{ item.name }}
       </h1>
-      <p class="text-coolWhite-dark">{{ item.description }}</p>
-      <div class="flex items-center justify-center mt-3 space-x-2">
+      <p class="mt-4 text-coolWhite-dark">{{ item.description }}</p>
+      <div class="flex items-center justify-center mt-3 space-x-3">
         <div
           class="inline-flex items-center justify-center p-1 rounded-xl bg-brown hover:scale-125 transform duration-200 hover:bg-brown-dark"
           v-for="tec in item.tecnologies"
@@ -32,7 +32,7 @@
     <transition>
       <div
         v-if="showImg"
-        class="fixed top-0 w-screen h-screen px-8 pt-4 pb-8 bg-gray-800 bg-opacity-60"
+        class="fixed top-0 z-20 w-screen h-screen px-8 pt-4 pb-8 bg-gray-800 bg-opacity-60"
       >
         <div class="flex flex-row-reverse mb-4">
           <button
