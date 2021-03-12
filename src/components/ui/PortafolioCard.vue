@@ -17,13 +17,13 @@
       </h1>
       <p class="text-coolWhite-dark">{{ item.description }}</p>
       <div class="flex items-center justify-center mt-3 space-x-2">
-        <button
+        <div
           class="inline-flex items-center justify-center p-1 rounded-xl bg-brown hover:scale-125 transform duration-200 hover:bg-brown-dark"
           v-for="tec in item.tecnologies"
           :key="tec"
         >
           <p-icon class="w-6 h-6 text-coolWhite-light" :icon="tec"></p-icon>
-        </button>
+        </div>
       </div>
     </div>
   </div>
