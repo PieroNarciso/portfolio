@@ -32,7 +32,7 @@
     <transition>
       <div
         v-if="showImg"
-        class="fixed top-0 w-screen h-screen px-8 pt-4 pb-8 bg-gray-800 bg-opacity-50"
+        class="fixed top-0 w-screen h-screen px-8 pt-4 pb-8 bg-gray-800 bg-opacity-60"
       >
         <div class="flex flex-row-reverse mb-4">
           <button
