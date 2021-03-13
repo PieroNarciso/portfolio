@@ -1,7 +1,11 @@
 <template>
+  <a v-if="href" class="btn" :href="href" target="_blank">
+    <slot />
+  </a>
   <button
+    v-else
     v-bind="$attrs"
-    class="inline-flex items-center px-3 py-2 border-2 rounded disabled:bg-secondary-dark disabled:opacity-60 text-coolWhite border-coolWhite focus:outline-none hover:bg-secondary-dark transition duration-700 disabled:cursor-default"
+    class="btn"
     :disabled="loading"
   >
     <svg
@@ -44,7 +48,19 @@ export default defineComponent({
       required: false,
       default: false,
     },
+    href: {
+      type: String as PropType<string>,
+      required: false,
+      default: null,
+    },
   },
   setup() {},
 });
 </script>
+
+<style scoped>
+
+.btn {
+  @apply inline-flex items-center px-3 py-2 border-2 rounded disabled:bg-secondary-dark disabled:opacity-60 text-coolWhite border-coolWhite focus:outline-none hover:bg-secondary-dark transition duration-700 disabled:cursor-not-allowed;
+}
+</style>
