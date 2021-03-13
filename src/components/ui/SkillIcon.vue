@@ -9,7 +9,7 @@
     <!-- Tooltip -->
     <div
       v-if="showTooltip"
-      class="absolute z-10 px-1 mb-16 text-xs uppercase bg-gray-800 rounded opacity-85 text-coolWhite-light"
+      class="absolute z-10 px-1 mb-16 text-xs capitalize bg-gray-800 rounded opacity-85 text-coolWhite-light"
     >
       {{ iconName }}
     </div>

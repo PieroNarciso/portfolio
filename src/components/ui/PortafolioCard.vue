@@ -12,16 +12,29 @@
       />
     </div>
     <div class="flex-col p-4">
-      <h1 class="text-2xl font-bold tracking-wide text-coolWhite-dark">
-        {{ item.name }}
-      </h1>
+      <div class="flex flex-row justify-between">
+        <h1 class="text-2xl font-bold tracking-wide text-coolWhite-dark">
+          {{ item.name }}
+        </h1>
+        <a class="flex items-center px-2 py-1 font-medium rounded-lg text-coolWhite-light focus:outline-none bg-primary-dark hover:bg-primary hover:text-coolWhite-dark" :href="item.github" target="_blank">
+          Code
+          <p-icon class="inline-block w-6 h-6 ml-2 text-coolWhite-light" icon="code"></p-icon>
+        </a>
+      </div>
       <p class="mt-4 text-coolWhite-dark">{{ item.description }}</p>
       <div class="flex items-center justify-center mt-3 space-x-3">
         <template
           v-for="tec in item.tecnologies"
+          :key="tec"
         >
           <SkillIcon :icon-name="tec" />
         </template>
+      </div>
+      <div class="flex flex-row-reverse mt-4" v-if="item.link">
+        <p-btn class="font-semibold tracking-wide" :href="item.link">
+          Take a look
+          <p-icon class="inline-block ml-1 w-7 h-7" icon="arrow-right"></p-icon>
+        </p-btn>
       </div>
     </div>
   </div>
