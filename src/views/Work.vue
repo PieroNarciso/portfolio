@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-12">
+  <div class="pt-12 pb-6">
     <ThePortfolioSection />
   </div> 
 </template>

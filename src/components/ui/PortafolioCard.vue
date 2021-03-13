@@ -17,13 +17,11 @@
       </h1>
       <p class="mt-4 text-coolWhite-dark">{{ item.description }}</p>
       <div class="flex items-center justify-center mt-3 space-x-3">
-        <div
-          class="inline-flex items-center justify-center p-1 rounded-xl bg-brown hover:scale-125 transform duration-200 hover:bg-brown-dark"
+        <template
           v-for="tec in item.tecnologies"
-          :key="tec"
         >
-          <p-icon class="w-6 h-6 text-coolWhite-light" :icon="tec"></p-icon>
-        </div>
+          <SkillIcon :icon-name="tec" />
+        </template>
       </div>
     </div>
   </div>
@@ -64,6 +62,7 @@ import { defineComponent, PropType, ref } from 'vue';
 import { PortafolioItem } from '../../types';
 import PBtn from '../base/PBtn.vue';
 import PIcon from '../base/PIcon.vue';
+import SkillIcon from './SkillIcon.vue';
 
 export default defineComponent({
   props: {
@@ -75,6 +74,7 @@ export default defineComponent({
   components: {
     PBtn,
     PIcon,
+    SkillIcon,
   },
   setup() {
     const showImg = ref(false);
