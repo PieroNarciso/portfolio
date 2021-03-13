@@ -2,7 +2,7 @@
   <div>
     <TheHero />
     <TheSkillSection />
-    <ThePortafolioSection />
+    <ThePortfolioSection />
     <TheContactMe class="pb-8"/>
 
     <div
@@ -32,14 +32,14 @@ import { defineComponent } from 'vue'
 
 import TheHero from '../components/layout/TheHero.vue';
 import TheSkillSection from '../components/layout/TheSkillSection.vue';
-import ThePortafolioSection from '../components/layout/ThePortafolioSection.vue';
+import ThePortfolioSection from '../components/layout/ThePortfolioSection.vue';
 import TheContactMe from '../components/layout/TheContactMe.vue';
 
 export default defineComponent({
   components: {
     TheHero,
     TheSkillSection,
-    ThePortafolioSection,
+    ThePortfolioSection,
     TheContactMe,
   },
   setup() {
