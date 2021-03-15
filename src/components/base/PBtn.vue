@@ -1,5 +1,5 @@
 <template>
-  <a v-if="href" class="btn" :href="href" target="_blank">
+  <a v-if="href" class="btn" :href="href" target="_blank" rel="noreferrer">
     <slot />
   </a>
   <button

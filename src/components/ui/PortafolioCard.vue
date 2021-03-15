@@ -16,7 +16,7 @@
         <h1 class="text-2xl font-bold tracking-wide text-coolWhite-dark">
           {{ item.name }}
         </h1>
-        <a class="flex items-center px-2 py-1 font-medium rounded-lg text-coolWhite-light focus:outline-none bg-primary-dark hover:bg-primary hover:text-coolWhite-dark" :href="item.github" target="_blank">
+        <a class="flex items-center px-2 py-1 font-medium rounded-lg text-coolWhite-light focus:outline-none bg-primary-dark hover:bg-primary hover:text-coolWhite-dark" :href="item.github" target="_blank" rel="noreferrer">
           Code
           <p-icon class="inline-block w-6 h-6 ml-2 text-coolWhite-light" icon="code"></p-icon>
         </a>
