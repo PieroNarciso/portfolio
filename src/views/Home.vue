@@ -1,9 +1,9 @@
 <template>
   <div>
-    <TheHero />
-    <TheSkillSection />
-    <ThePortfolioSection />
-    <TheContactMe class="pb-8"/>
+    <TheHero class="sm:px-4"/>
+    <TheSkillSection class="sm:px-8"/>
+    <ThePortfolioSection class="sm:px-8" />
+    <TheContactMe class="px-4 pb-8 sm:px-8"/>
 
     <div
       class="fixed flex items-center justify-center w-full text-gray-200 bottom-1 animate-bounce"

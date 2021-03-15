@@ -1,11 +1,12 @@
 <template>
   <div
     class="flex items-center h-screen bg-gradient-to-b from-primary-light to-primary"
+    v-bind="$attrs"
   >
     <div class="px-2">
       <transition-group appear>
         <h1
-          class="text-5xl font-semibold ease-in-out text-coolWhite transform transition duration-200 hover:scale-110 hover:translate-x-4"
+          class="text-6xl font-semibold ease-in-out text-coolWhite transform transition duration-200 hover:scale-110 hover:translate-x-4"
           key="transition-1"
         >
           <span
@@ -28,7 +29,7 @@
       </transition-group>
 
       <p-btn
-        class="mt-5 font-semibold uppercase"
+        class="mt-5 font-semibold uppercase sm:text-lg"
         @click="$router.push({ name: 'Contact' })"
       >
         Contact Me
