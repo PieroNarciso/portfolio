@@ -1,8 +1,8 @@
 <template>
   <div
-    class="overflow-hidden bg-primary-light grid grid-cols-1 rounded-md hover:shadow-xl transform hover:scale-105 duration-300"
+    class="overflow-hidden bg-primary-light grid grid-cols-1 rounded-md hover:shadow-xl transform hover:scale-105 duration-300 lg:grid-cols-8"
   >
-    <div class="h-52">
+    <div class="h-52 sm:h-64 md:h-80 xl:h-96 lg:col-span-3">
       <img
         class="object-cover object-top w-full h-full cursor-pointer"
         v-if="item.path"
@@ -11,25 +11,37 @@
         alt=""
       />
     </div>
-    <div class="flex-col p-4">
-      <div class="flex flex-row justify-between">
-        <h1 class="text-2xl font-bold tracking-wide text-coolWhite-dark">
-          {{ item.name }}
-        </h1>
-        <a class="flex items-center px-2 py-1 font-medium rounded-lg text-coolWhite-light focus:outline-none bg-primary-dark hover:bg-primary hover:text-coolWhite-dark" :href="item.github" target="_blank" rel="noreferrer">
-          Code
-          <p-icon class="inline-block w-6 h-6 ml-2 text-coolWhite-light" icon="code"></p-icon>
-        </a>
+    <div class="flex flex-col justify-between p-4 lg:col-span-5">
+      <div>
+        <div class="flex flex-row items-center justify-between">
+          <h1
+            class="text-2xl font-bold tracking-wide sm:text-3xl text-coolWhite-dark"
+          >
+            {{ item.name }}
+          </h1>
+          <a
+            class="flex items-center px-2 py-1 font-medium rounded-lg text-coolWhite-light focus:outline-none bg-primary-dark hover:bg-primary hover:text-coolWhite-dark"
+            :href="item.github"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Code
+            <p-icon
+              class="inline-block w-6 h-6 ml-2 text-coolWhite-light"
+              icon="code"
+            ></p-icon>
+          </a>
+        </div>
+        <p class="mt-4 sm:mt-6 sm:text-lg text-coolWhite-dark">
+          {{ item.description }}
+        </p>
+        <div class="flex items-center justify-center mt-3 sm:mt-5 space-x-3">
+          <template v-for="tec in item.tecnologies" :key="tec">
+            <SkillIcon :icon-name="tec" />
+          </template>
+        </div>
       </div>
-      <p class="mt-4 text-coolWhite-dark">{{ item.description }}</p>
-      <div class="flex items-center justify-center mt-3 space-x-3">
-        <template
-          v-for="tec in item.tecnologies"
-          :key="tec"
-        >
-          <SkillIcon :icon-name="tec" />
-        </template>
-      </div>
+
       <div class="flex flex-row-reverse mt-4" v-if="item.link">
         <p-btn class="font-semibold tracking-wide" :href="item.link">
           Take a look
@@ -56,13 +68,10 @@
             ></p-icon>
           </button>
         </div>
-        <div class="overflow-hidden rounded-lg">
-          <img
-            class="w-full h-full"
-            @click="toggleImg"
-            :src="item.path"
-            alt=""
-          />
+        <div
+          class="flex items-center justify-center overflow-hidden rounded-lg"
+        >
+          <img class="h-full" @click="toggleImg" :src="item.path" alt="" />
         </div>
       </div>
     </transition>
@@ -119,7 +128,7 @@ export default defineComponent({
   @apply opacity-100;
 }
 .v-leave-to {
-  @apply opacity-0
+  @apply opacity-0;
 }
 .v-leave-active {
   @apply duration-300;

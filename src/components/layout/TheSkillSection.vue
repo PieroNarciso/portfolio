@@ -1,10 +1,10 @@
 <template>
-  <section class="p-4 bg-primary-light bg-gradient-to-b from-primary to-primary-dark">
+  <section class="p-4 bg-primary-light bg-gradient-to-b from-primary to-primary-dark" v-bind="$attrs">
     <div class="grid grid-cols-1">
       <TitleSection>
         My Skills
       </TitleSection>
-      <div class="mt-8 grid grid-cols-2 gap-2">
+      <div class="mt-8 grid grid-cols-2 lg:grid-cols-3 justify-items-center gap-2 2xl:grid-cols-4 xl:gap-8 sm:gap-6">
         <SkillCard
           v-for="skillItem in skills"
           :key="skillItem.name"

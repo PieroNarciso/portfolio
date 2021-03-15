@@ -6,7 +6,7 @@
     <PTextarea placeholder="Message" v-model="messageInput" />
     <div class="flex flex-row-reverse">
       <PBtn
-        class="inline-flex items-center mt-3"
+        class="inline-flex items-center mt-3 md:text-lg"
         type="button"
         @click="sendMessage"
         :loading="isLoading"
