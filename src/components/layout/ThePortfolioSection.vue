@@ -61,7 +61,7 @@ export default defineComponent({
         name: 'Chat App',
         description:
           'Chat Application with session authentication to manage permissions. It is build with Vue 3, Typescript and Bootstrap.',
-        github: 'https://github.com/PieroNarciso/chat-room',
+        github: 'https://github.com/PieroNarciso/chat-room-app',
         tecnologies: ['nodejs', 'vue', 'typescript'],
         path: '/portafolio/chat-app.png',
       },
