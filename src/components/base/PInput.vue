@@ -1,7 +1,6 @@
 <template>
   <input
     v-bind="$attrs"
-    type="text"
     :value="modelValue"
     @input="updateModelValue"
     class="w-full text-lg border-0 rounded placeholder-primary-dark bg-coolWhite-dark placeholder-opacity-60 focus:ring-offset-2 focus:ring-offset-primary focus:ring-2 focus:ring-secondary-dark transition duration-300"

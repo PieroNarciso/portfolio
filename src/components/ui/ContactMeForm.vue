@@ -1,9 +1,9 @@
 <template>
   <form class="flex-col space-y-3">
-    <PInput placeholder="Name" v-model="nameInput" />
-    <PInput placeholder="Email" v-model="emailInput" />
-    <PInput placeholder="Subject" v-model="subjectInput" />
-    <PTextarea placeholder="Message" v-model="messageInput" />
+    <PInput placeholder="Name" v-model="nameInput" type="text" />
+    <PInput placeholder="Email" v-model="emailInput" type="email" />
+    <PInput placeholder="Subject" v-model="subjectInput" type="text" />
+    <PTextarea placeholder="Message" v-model="messageInput" type="text" />
     <div class="flex flex-row-reverse">
       <PBtn
         class="inline-flex items-center mt-3 md:text-lg"
