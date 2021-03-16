@@ -4,10 +4,7 @@
     <div class="mt-12 text-lg grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:gap-8 xl:gap-12 2xl:gap-32">
       <div class="lg:col-span-1">
         <p class="lg:text-2xl md:text-xl text-coolWhite-light lg:mt-8 xl:mt-12 2xl:mt-20 2xl:px-12">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          I am interested in job offers, freelancer opportunities for web projects, as a fullstack web developer or backend developer. I am open to take any challenge. If you have any other request or question, feel free to ask.
         </p>
       </div>
       <div class="lg:col-span-1">

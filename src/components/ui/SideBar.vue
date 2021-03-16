@@ -52,7 +52,7 @@ export default defineComponent({
 
     const links = ref([
       { name: 'Home', to: '/' },
-      { name: 'About', to: '/about' },
+      // { name: 'About', to: '/about' },
       { name: 'Work', to: '/work' },
       { name: 'Contact', to: '/contact' },
     ]);
