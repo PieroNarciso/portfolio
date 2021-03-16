@@ -8,7 +8,7 @@
 
   <teleport to="body">
     <transition>
-      <SideBar v-if="showSideBar" @close="toggleSideBar" />
+      <TheRouteMenu v-if="showSideBar" @close="toggleSideBar" />
     </transition>
   </teleport>
 </template>
@@ -17,12 +17,12 @@
 import { defineComponent, ref } from 'vue';
 
 import PIcon from '../base/PIcon.vue';
-import SideBar from './SideBar.vue';
+import TheRouteMenu from './TheRouteMenu.vue';
 
 export default defineComponent({
   components: {
     PIcon,
-    SideBar,
+    TheRouteMenu,
   },
   setup() {
     const showSideBar = ref(false);
