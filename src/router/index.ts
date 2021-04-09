@@ -8,6 +8,12 @@ const routes: Array<RouteRecordRaw> = [
     component: Home,
   },
   {
+    path: '/home',
+    redirect: {
+      name: 'Home'
+    }
+  },
+  {
     path: '/about',
     name: 'About',
     component: () => import('../views/About.vue'),
@@ -28,7 +34,7 @@ const router = createRouter({
   history: createWebHistory(),
   routes,
   scrollBehavior: (to) => {
-    if (to.hash) {
+    if (to.hash && to.name == 'Home') {
       return document.querySelector(to.hash)?.scrollIntoView({
         behavior: 'smooth',
       });

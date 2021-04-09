@@ -5,7 +5,7 @@
         v-for="nav in navList"
         :key="nav.id"
         class="hover:bg-primary rounded p-1 flex-col flex items-center text-white"
-        :to="{ to: 'Home', hash: nav.to }"
+        :to="isHome? { to: 'Home', hash: nav.hash } : { name: nav.to }"
       >
         <p-icon :class="iconClass" :icon="nav.icon"></p-icon>
         <span class="hidden xl:block">{{ nav.name }}</span>
@@ -15,7 +15,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref, computed } from 'vue'
+import { useRoute } from 'vue-router';
 
 import PIcon from '../base/PIcon.vue';
 
@@ -24,18 +25,23 @@ export default defineComponent({
     PIcon,
   },
   setup() {
+    const route = useRoute();
     const iconClass = ref('text-white h-8 w-8');
+    const isHome = computed(() => {
+      return route.name === 'Home'
+    });
 
     const navList = ref([
-      { id: 1, name: 'Home', icon: 'home', to: '#home' },
-      { id: 4, name: 'Skills', icon: 'skill', to: '#skill'},
-      { id: 2, name: 'Work', icon: 'work', to: '#work' },
-      { id: 3, name: 'Contact', icon: 'contact', to: '#contact' },
+      { id: 1, name: 'Home', icon: 'home', hash: '#home', to: 'Home' },
+      { id: 4, name: 'Skills', icon: 'skill', hash: '#skill'},
+      { id: 2, name: 'Work', icon: 'work', hash: '#work', to: 'Work' },
+      { id: 3, name: 'Contact', icon: 'contact', hash: '#contact', to: 'Contact' },
     ]);
 
     return {
       iconClass,
       navList,
+      isHome,
     }
   },
 })

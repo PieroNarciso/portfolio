@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 py-8 pt-12 sm:px-8 lg:px-12 xl:px-24 2xl:px-36">
+  <div class="px-4 py-8 pt-12 sm:px-8 lg:px-12 xl:px-24 2xl:px-36 h-screen">
     <TheContactMe />
   </div>
 </template>
