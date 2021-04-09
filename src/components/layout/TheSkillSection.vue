@@ -1,5 +1,9 @@
 <template>
-  <section class="p-4 bg-primary-light bg-gradient-to-b from-primary to-primary-dark" v-bind="$attrs">
+  <section
+    id="skill"
+    class="p-4 bg-primary-light bg-gradient-to-b from-primary to-primary-dark"
+    v-bind="$attrs"
+  >
     <div class="grid grid-cols-1">
       <TitleSection>
         My Skills

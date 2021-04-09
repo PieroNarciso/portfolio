@@ -27,6 +27,14 @@ const routes: Array<RouteRecordRaw> = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior: (to) => {
+    if (to.hash) {
+      return document.querySelector(to.hash)?.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+    return { left: 0, top: 0 }
+  }
 });
 
 export default router;

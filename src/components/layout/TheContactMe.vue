@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-4 bg-primary" v-bind="$attrs">
+  <section id="contact" class="pt-4 bg-primary" v-bind="$attrs">
     <TitleSection> Contact Me </TitleSection>
     <div class="mt-12 text-lg grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:gap-8 xl:gap-12 2xl:gap-32">
       <div class="lg:col-span-1">

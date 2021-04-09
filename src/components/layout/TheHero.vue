@@ -1,7 +1,8 @@
 <template>
-  <div
+  <section
     class="flex items-center h-screen bg-gradient-to-b from-primary-light to-primary"
     v-bind="$attrs"
+    id="home"
   >
     <div class="px-2">
       <transition-group appear>
@@ -35,7 +36,7 @@
         Contact Me
       </p-btn>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">

@@ -1,11 +1,16 @@
 <template>
-  <TheNavbar />
-  <div>
-    <router-view v-slot="{ Component }">
-      <transition name="fade">
-        <component :is="Component" />
-      </transition>
-    </router-view>
+  <the-navbar />
+  <div class="flex">
+    <div class="hidden md:inline-block">
+      <the-side-bar  class="bg-gray-600"/>
+    </div>
+    <div>
+      <router-view v-slot="{ Component }">
+        <transition name="fade">
+          <component :is="Component" />
+        </transition>
+      </router-view>
+    </div>
   </div>
 </template>
 
@@ -13,10 +18,12 @@
 import { defineComponent } from 'vue';
 
 import TheNavbar from './components/layout/TheNavbar.vue';
+import TheSideBar from './components/layout/TheSideBar.vue';
 
 export default defineComponent({
   components: {
     TheNavbar,
+    TheSideBar,
   },
   name: 'App',
 });
