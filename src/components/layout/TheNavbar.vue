@@ -1,10 +1,10 @@
 <template>
-  <div class="fixed z-10 flex items-center justify-between w-full px-3 py-2 shadow-xl bg-primary-light">
+  <div class="fixed md:absolute z-10 flex items-center justify-between w-full px-3 py-2 shadow-xl bg-primary-light">
     <div>
-      <BurgerMenu />
+      <BurgerMenu class="md:hidden"/>
     </div>
     <SocialBar class="" />
-  </div> 
+  </div>
 </template>
 
 <script lang="ts">

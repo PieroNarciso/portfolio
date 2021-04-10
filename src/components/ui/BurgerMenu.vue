@@ -1,5 +1,6 @@
 <template>
   <button
+    v-bind="$attrs"
     class="p-1 rounded-full focus:bg-primary-dark transform duration-200 hover:scale-105 focus:outline-none"
     @click="toggleSideBar"
   >

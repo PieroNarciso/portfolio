@@ -1,5 +1,5 @@
 <template>
-  <section class="h-auto p-4 bg-gradient-to-b from-primary-dark to-primary" v-bind="$attrs">
+  <section id="work" class="h-auto p-4 bg-gradient-to-b from-primary-dark to-primary" v-bind="$attrs">
     <TitleSection>My Portfolio</TitleSection>
     <div class="flex flex-col mt-12 xl:flex-none xl:grid xl:grid-cols-2 xl:px-2 space-y-10 sm:px-8 md:px-16 xl:gap-x-8 xl:gap-y-12 xl:space-y-0">
       <PortafolioCard v-for="item in items" :item="item" :key="item.name" />
