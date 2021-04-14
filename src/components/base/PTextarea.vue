@@ -1,5 +1,6 @@
 <template>
   <textarea
+    v-bind="$attrs"
     class="w-full text-lg border-0 rounded resize-none bg-coolWhite-dark placeholder-primary-dark placeholder-opacity-60 focus:ring-offset-2 focus:ring-offset-primary focus:ring-2 focus:ring-secondary-dark transition duration-300"
     @input="updateModelValue"
     :value="modelValue"
