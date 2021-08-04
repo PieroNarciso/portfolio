@@ -28,7 +28,7 @@ export default defineComponent({
         github: 'https://github.com/PieroNarciso/covid-19',
         tecnologies: ['nodejs', 'typescript', 'vue', 'vuetify', 'docker'],
         path: '/portafolio/covid-app.png',
-        link: 'https://covid.pieronarciso.xyz',
+        link: 'https://covid.pieronarciso.com',
       },
       {
         name: 'Note Taking App',
@@ -37,7 +37,7 @@ export default defineComponent({
         github: 'https://github.com/PieroNarciso/note-taking-app',
         tecnologies: ['nodejs', 'react', 'typescript', 'tailwindcss'],
         path: '/portafolio/keeper-app.png',
-        link: 'https://note-app-demo.pieronarciso.xyz',
+        link: 'https://note-app-demo.pieronarciso.com',
       },
       {
         name: 'Task App',
@@ -46,7 +46,6 @@ export default defineComponent({
         github: 'https://github.com/PieroNarciso/taskapp',
         tecnologies: ['nodejs', 'vue', 'vuetify', 'typescript', 'docker'],
         path: '/portafolio/task-app.png',
-        link: 'https://taskapp.pieronarciso.xyz',
       },
       {
         name: 'Hash App',
@@ -55,7 +54,6 @@ export default defineComponent({
         github: 'https://github.com/PieroNarciso/encryption-hash-app',
         tecnologies: ['nodejs', 'vue', 'typescript'],
         path: '/portafolio/hash-app.png',
-        link: 'https://hash-app.pieronarciso.xyz',
       },
       {
         name: 'Chat App',
