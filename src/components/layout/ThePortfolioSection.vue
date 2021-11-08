@@ -22,6 +22,14 @@ export default defineComponent({
   setup() {
     const items = ref<PortafolioItem[]>([
       {
+        name: 'DiscoverFy',
+        description: 'Discover new music based in your taste in Spotify. App built with React, tailwindcss, Vitejs and the Spotify RestAPI',
+        github: 'https://github.com/PieroNarciso/spotify-dashboard',
+        tecnologies: ['typescript', 'react', 'tailwindcss'],
+        path: '/portafolio/spotify-app.png',
+        link: 'https://spotify.pieronarciso.com'
+      },
+      {
         name: 'Covid Tracker',
         description:
           "Searches all acumulate cases by covid-19 in all countries and line plot in a graph. If using a third party RESTful API to fetch the data. It's build in Vuejs 2 with Typescript as a frontend Framework.",
